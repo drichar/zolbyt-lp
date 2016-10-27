@@ -1,0 +1,131 @@
+.button.actionButton,
+.button.actionButton:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.slides.whiteSlide .panel .button.actionButton svg {
+    fill: #303030 !important;
+}
+
+.fade.fade-blue .content {
+    background: rgba(0,35,64,0.75);
+    outline: 2px solid rgba(0,35,64,0.75);
+}
+
+.h2--slogan, .h2--header {
+    font-size: 60px;
+    text-transform: none;
+    line-height: 1.17;
+    letter-spacing: 0;
+    font-family: "Raleway";
+    font-weight: 600;
+}
+
+.h2--slogan span {
+    color: #ffff66;
+}
+
+.p--responsive {
+    font-size: 26px;
+}
+
+.slide .button.hero-btn {
+    padding: 18px 33px;
+}
+
+@media screen and (max-width:1280px) {
+    .h2--slogan, .h2--header {
+        font-size: 50px;
+    }
+
+    .p--responsive {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .h2--slogan, .h2--header {
+        font-size: 40px;
+    }
+
+    .p--responsive {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .h2--slogan, .h2--header {
+        font-size: 30px;
+        text-transform: none;
+        line-height: 1.17;
+        letter-spacing: 0;
+        font-weight: 600;
+    }
+
+    .p--responsive {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:435px) {
+    .h2--slogan, .h2--header {
+        font-size: 25px;
+    }
+
+    .h2--header {
+        margin-top: 1.0rem;
+        margin-bottom: 1.0rem;
+    }
+
+    .p--responsive {
+        font-size: 16px;
+    }
+
+    .slide .button.hero-btn {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 12px 22px;
+    }
+
+    .wrap-left {
+        text-align: left !important;
+    }
+}
+
+.cell-71:hover {
+    background: #2196F3;
+    color: #ffffff;
+    opacity: 1;
+    -webkit-box-shadow: 0 0 0 1px rgba(41,41,41,0.2);
+    box-shadow: 0 0 0 1px rgba(41,41,41,0.2);
+}
+
+.slide.whiteSlide .cell-71:hover svg {
+    stroke: #fff;
+    fill: #fff;
+}
+
+.sidebar a,
+.sidebar .close svg {
+    color: #303030;
+    fill: #303030;
+}
+
+.sidebar a.logo svg {
+    fill: #2196F3;
+}
+
+.panel.bottom .center a {
+    font-size: 0.875rem;
+    margin: 0 1.5rem;
+    font-weight: 300;
+    color: rgba(255,255,255,1);
+}
+
+.whiteSlide .panel.bottom .center a,
+.lastSlide .panel.bottom .center a {
+    display: none;
+}
