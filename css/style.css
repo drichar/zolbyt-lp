@@ -115,6 +115,8 @@ body:not(.firstSlide) .lang-select a {
 
 .cell-71 h3 {
     color: #2196F3;
+    -webkit-transition: .35s;
+    transition: .35s;
 }
 
 .cell-71:hover h3 {
@@ -140,16 +142,39 @@ body:not(.firstSlide) .lang-select a {
         font-size: 21px;
     }
 
+    .loginNav {
+        margin-bottom: 0;
+    }
+
+    .cell-71 {
+        white-space: nowrap;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .cell-71:hover {
         background-color: transparent;
         box-shadow: none;
     }
 
-    .cell-71 .loginNav {
+    .cell-71 svg, .cell-71 h3 {
+        display: inline-block;
+        margin-top: 0;
         margin-bottom: 0;
     }
 
-    .cell-71 svg, .cell-71 p {
+    .cell-71:hover svg {
+        fill: #303030 !important;
+        stroke: #303030 !important;
+    }
+
+    .cell-71 svg {
+        height: 24px;
+        position: relative;
+        top: 4px;
+    }
+
+    .cell-71 p {
         display: none !important;
     }
 
