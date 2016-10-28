@@ -154,7 +154,7 @@ body:not(.firstSlide) .lang-select a {
     .cell-71, .cell-71:hover {
         white-space: nowrap;
         padding: 0.5rem 0.5rem 1.0rem;
-        margin-bottom: 0.75rem;
+        margin-bottom: 1.0rem;
         background-color: #2196F3;
         border-radius: 100px;
         -webkit-transition:0.25s !important;
@@ -199,12 +199,13 @@ body:not(.firstSlide) .lang-select a {
     .cell-71 svg {
         height: 24px; width: 30px;
         fill: rgba(255, 255, 255, 0.5) !important;
-        stroke: none;
+        stroke: none !important;
     }
 
     .cell-71:hover svg {
         height: 24px; width: 38px;
         fill: rgba(255, 255, 255, 0.75) !important;
+        stroke: none !important;
     }
 
     .cell-71 h3, .cell-71:hover h3 {
@@ -219,17 +220,12 @@ body:not(.firstSlide) .lang-select a {
 @media screen and (max-width:768px) {
     .loginMenu {
         display: block !important;
-        margin: 1.0rem 0 1.5rem;
+        margin: 1.5rem 0 1.5rem;
     }
 
     .loginMenu li {
-        display: inline-block;
+        display: inline-block !important;
         margin-bottom: 1.0rem;
-        margin-right: 1.0rem;
-    }
-
-    .loginMenu li:last-child {
-        margin-right: 0;
     }
 
     .h2--slogan, .h2--header {
@@ -276,6 +272,20 @@ body:not(.firstSlide) .lang-select a {
 
     .wrap-left {
         text-align: left !important;
+    }
+
+    .loginMenu {
+        display: block !important;
+        margin: 0.5rem 0 2.5rem;
+    }
+
+    .loginMenu li {
+        display: block !important;
+        margin-right: 1.0rem;
+    }
+
+    .loginMenu li:last-child {
+        margin-right: 0;
     }
 
     .cell-71 h3 {
