@@ -61,6 +61,14 @@ body:not(.firstSlide) .lang-select a {
     outline: 2px solid rgba(27,117,191,0.75);
 }
 
+.slide .background.home-bg {
+    background: url('../assets/img/home__bg.jpg') no-repeat center center; background-size: cover;
+}
+
+.slide .background.affiliates-bg {
+    background: url('../assets/img/affiliates__bg.jpg') no-repeat center center; background-size: cover;
+}
+
 .h2--slogan, .h2--header {
     text-transform: none;
     line-height: 1.17;
@@ -138,6 +146,10 @@ body:not(.firstSlide) .lang-select a {
 }
 
 @media screen and (max-width:1024px) {
+    .slide .background.affiliates-bg {
+        background: url('../assets/img/affiliates__bg.jpg') no-repeat 70% center; background-size: cover;
+    }
+
     .h2--slogan, .h2--header {
         font-size: 40px;
     }
@@ -242,6 +254,10 @@ body:not(.firstSlide) .lang-select a {
 }
 
 @media screen and (max-width:570px) {
+    .slide .background.home-bg {
+        background: url('../assets/img/home__bg.jpg') no-repeat 80% center; background-size: cover;
+    }
+
     .loginNav {
         max-width: none !important;
     }
