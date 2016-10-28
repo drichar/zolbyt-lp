@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#2196F3" />
     <title>Zolbyt</title>
 
     <!-- CSS -->
@@ -54,12 +55,22 @@
         <symbol id="direction-horizontal" viewBox="-2 6 16 16"><path d="M13.7 13.3l-5-5c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l3.3 3.3h-11.6c-.6 0-1 .4-1 1s.4 1 1 1h11.6l-3.3 3.3c-.4.4-.4 1 0 1.4.2.2.4.3.7.3s.5-.1.7-.3l5-5c.2-.2.3-.5.3-.7s-.1-.5-.3-.7z"/></symbol>
         <symbol id="direction-vertical" viewBox="-2 6 16 16"><path d="M6.7 21.7l5-5c.4-.4.4-1 0-1.4s-1-.4-1.4 0l-3.3 3.3v-11.6c0-.6-.4-1-1-1s-1 .4-1 1v11.6l-3.3-3.3c-.4-.4-1-.4-1.4 0-.2.2-.3.4-.3.7 0 .3.1.5.3.7l5 5c.2.2.4.3.7.3s.5-.1.7-.3z"/></symbol>
         <symbol id="right" viewBox="-2 6 16 16"><path d="M13.7 13.3l-5-5c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l3.3 3.3h-11.6c-.6 0-1 .4-1 1s.4 1 1 1h11.6l-3.3 3.3c-.4.4-.4 1 0 1.4.2.2.4.3.7.3s.5-.1.7-.3l5-5c.2-.2.3-.5.3-.7s-.1-.5-.3-.7z"/></symbol>
+        <symbol id="icon-affiliates" viewBox="0 0 72 72"><path d="M47.7 33.1c4.8 0 8.7-3.9 8.7-8.7s-3.9-8.8-8.7-8.8-8.8 3.9-8.8 8.8 3.9 8.7 8.8 8.7zm-23.4 0c4.8 0 8.7-3.9 8.7-8.7s-3.9-8.8-8.7-8.8-8.8 3.9-8.8 8.8 4 8.7 8.8 8.7zm0 5.8c-6.8 0-20.4 3.4-20.4 10.2v7.3h40.8v-7.3c.1-6.8-13.6-10.2-20.4-10.2zm23.4 0c-.8 0-1.8.1-2.8.1 3.4 2.5 5.7 5.7 5.7 10.1v7.3h17.5v-7.3c0-6.8-13.6-10.2-20.4-10.2z"/></symbol>
+        <symbol id="icon-contractors" viewBox="0 0 72 72"><path d="M36 36c9.7 0 17.5-7.8 17.5-17.5S45.7 1 36 1 18.5 8.8 18.5 18.5 26.3 36 36 36zm0 8.8c-11.7 0-35 5.9-35 17.5V71h70v-8.8c0-11.6-23.3-17.4-35-17.4z"/></symbol>
+        <symbol id="icon-employers" viewBox="0 0 72 72"><path d="M29 50v-3.5H4.5v14c0 3.9 3.1 7 7 7h49c3.9 0 7-3.1 7-7v-14H43V50H29zm35-31.5H50v-7l-7-7H29l-7 7v7H8c-3.8 0-7 3.1-7 7V36c0 3.9 3.1 7 7 7h21v-7h14v7h21c3.8 0 7-3.1 7-7V25.5c0-3.9-3.2-7-7-7zm-21 0H29v-7h14v7z"/></symbol>
     </svg>
 
     <!-- Panel top #19 -->
     <nav class="panel top forceMobileView">
         <div class="sections desktop">
             <div class="left"><a href="#home"><svg style="width:107px;height:48px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a></div>
+            <div class="center">
+                <ul class="menu">
+                    <li><a href="#">Employers</a></li>
+                    <li><a href="#">Contractors</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                </ul>
+            </div>
             <div class="right"><a class="button menuButton" href="#start">Get Started</a></div>
         </div>
         <div class="sections compact hidden">
@@ -73,16 +84,16 @@
         <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
         <div class="content">
             <a href="#home" class="logo"><svg width="120" height="50"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a>
-            <ul class="mainMenu uppercase textBlack">
+            <ul class="mainMenu uppercase">
                 <li><a href="#start">Get Started</a></li>
                 <li><a href="#employers">Employers</a></li>
                 <li><a href="#contractors">Contractors</a></li>
                 <li><a href="#affiliates">Affiliates</a></li>
             </ul>
-            <ul class="subMenu textBlack">
+            <ul class="subMenu">
+                <li><a href="#contact">Contact Us</a></li>
                 <li><a href="#">Terms &amp; Conditions</a></li>
                 <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Contact Us</a></li>
             </ul>
             <ul class="social">
                 <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></li>
@@ -99,8 +110,14 @@
                 <div class="wrap">
 
                     <div class="fix-10-12 toLeft left">
+                        <ul class="loginMenu ae-1">
+                            <li><a href="#">Employers</a></li>
+                            <li><a href="#">Contractors</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                        </ul>
                         <h2 class="ae-2 h2--slogan">Shift employees <span>on demand</span> for the hospitality &amp; banquet industry.</h2>
                         <a href="#start" class="button blue radius hero-btn ae-3">Learn More</a>
+                        <div class="lang-select ae-4"><a href="#" class="active">EN</a> <a href="#">ES</a></div>
                     </div>
 
                 </div>
@@ -116,30 +133,35 @@
                 <div class="wrap">
 
                     <div class="fix-10-12">
-                        <h2 class="ae-1 h2--header">Zolbyt is the easy way to find part time&nbsp;work</h2>
-                        <div class="button play blue popupTrigger ae-4 fromCenter play-71" data-popup-id="71-2">
-                            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play"></use></svg>
+                        <h2 class="ae-1 h2--header">Zolbyt is the easy way to find part&nbsp;time&nbsp;work</h2>
+                        <div class="sourceSans popupTrigger clearBoth ae-2 fromRight margin-top-4" data-popup-id="zolbytVimeo">
+                            <span class="ae-5 fromCenter">
+                                <span class="button play blue button-89">
+                                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play"></use></svg>
+                                </span>
+                            </span>
+                            <span class="text-89"><strong>How Zolbyt works</strong> 1:24</span>
                         </div>
                     </div>
                     <div class="fix-12-12 margin-bottom-10">
                         <ul class="grid fixedSpaces equal center grid-71">
                             <li class="col-4-12 ae-2">
                                 <a href="#employers" class="cell-71 equalElement">
-                                    <svg width="34" height="34" viewBox="0 0 72 72" class="icon-71" xmlns="http://www.w3.org/2000/svg"><g stroke-width="4" stroke-linejoin="round" fill="none"><path d="M1 28.313c23.023 0 41.688 18.664 41.688 41.688"></path><path d="M1 2.438c37.312 0 67.563 30.251 67.563 67.563"></path><path d="M16.813 61.375c0 3.97-3.217 7.188-7.188 7.188-3.97 0-7.188-3.217-7.188-7.188 0-3.97 3.217-7.188 7.188-7.188 3.97 0 7.188 3.217 7.188 7.188z"></path></g></svg>
+                                    <svg width="34" height="34" viewBox="0 0 72 72" class="icon-71"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-employers"></use></svg>
                                     <h3 class="uppercase">Employers</h3>
                                     <p class="small">Trained staff on call when you need them most</p>
                                 </a>
                             </li>
                             <li class="col-4-12 ae-3">
                                 <a href="#contractors" class="cell-71 equalElement">
-                                    <svg width="44" height="34" viewBox="0 0 90 72" class="icon-71" xmlns="http://www.w3.org/2000/svg"><g stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M1.553 28.514l10.683 15.908 12.286-14.712"/><path d="M88.083 45l-10.68-15.908-12.29 14.708"/><path d="M77.381 29.15c2.959 17.304-8.832 33.542-25.07 37.375-11.324 2.68-22.678-.916-30.402-8.529"/><path d="M12.195 44.229c-4.474-18.726 7.609-36.984 25.124-41.124 12.098-2.864 24.215 1.43 31.913 10.124"/><path d="M50.237 40.261c-2.99 2.99-7.847 2.99-10.837 0-2.994-2.994-2.994-7.847 0-10.844 2.99-2.986 7.847-2.986 10.837 0 2.994 2.998 2.994 7.851 0 10.844z"/></g></svg>
+                                    <svg width="34" height="34" viewBox="0 0 72 72" class="icon-71"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-contractors"></use></svg>
                                     <h3 class="uppercase">Contractors</h3>
                                     <p class="small">Extra pay, when you choose, doing what you know</p>
                                 </a>
                             </li>
-                            <li class="col-4-12 ae-5">
+                            <li class="col-4-12 ae-4">
                                 <a href="#affiliates" class="cell-71 equalElement last">
-                                    <svg width="26" height="34" viewBox="0 0 59 72" class="icon-71" xmlns="http://www.w3.org/2000/svg"><g stroke-width="4" stroke-linejoin="round" fill="none"><path d="M20 62c0 4.5-4.029 9-9 9-4.968 0-9-4.029-9-9 0-4.968 4.032-9 9-9h9v9z"></path><path d="M54 50c0 4.5-4.029 9-9 9-4.968 0-9-4.029-9-9 0-4.968 4.032-9 9-9h9v9z"></path><path d="M20 56v-40.114l34-13.886v44.743"></path><path d="M20 26l34-14"></path></g></svg>
+                                    <svg width="34" height="34" viewBox="0 0 72 72" class="icon-71"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-affiliates"></use></svg>
                                     <h3 class="uppercase">Affiliates</h3>
                                     <p class="small">Lorem ipsum dolor sit amet</p>
                                 </a>
@@ -153,14 +175,15 @@
     </section>
 
     <!-- Popup Video -->
-    <div class="popup autoplay" data-popup-id="71-2">
+    <div class="popup autoplay" data-popup-id="zolbytVimeo">
         <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
         <div class="content">
             <div class="container">
                 <div class="wrap">
                     <div class="fix-10-12">
                         <div class="embedVideo popupContent">
-                            <iframe src="https://player.vimeo.com/video/181956205?color=ff0179&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            <!-- ROBERT: If Spanish, replace the Vimeo iframe src video id (181956205) -->
+                            <iframe src="https://player.vimeo.com/video/181956205?color=2196f3&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -178,7 +201,8 @@
                         <div class="fix-7-12 left toRight">
                             <h2 class="ae-1 h2--header">Employers</h2>
                             <div class="ae-2">
-                                <p class="p--responsive">Are you a hospitality industry employee looking for extra hours? Zolbyt is the easiest way to find shifts on demand. Register and receive notifications of available shifts. Simple.</p>
+                                <p class="p--responsive"><strong>You need extra help, they need extra&nbsp;hours!</strong></p>
+                                <p class="p--responsive">Hospitality can be unpredictable. <strong>Zolbyt</strong> makes it easy to find staff on demand when you need them&nbsp;most.</p>
                             </div>
                             <a class="button hero-btn radius blue ae-3">Sign Up</a>
                             <a class="button hero-btn radius white textBlue ae-4">Sign In</a>
@@ -201,8 +225,7 @@
                         <div class="fix-7-12 left toLeft">
                             <h2 class="ae-1 h2--header">Contractors</h2>
                             <div class="ae-2">
-                                <p class="p--responsive"><strong>You need extra help, they need extra&nbsp;hours!</strong></p>
-                                <p class="p--responsive">Hospitality can be unpredictable. Zolbyt makes it easy to find staff on demand when you need them&nbsp;most.</p>
+                                <p class="p--responsive">Are you a hospitality industry employee looking for extra hours? <strong>Zolbyt</strong> is the easiest way to find shifts on demand. Register and receive notifications of available shifts. <strong>Simple.</strong></p>
                             </div>
                             <a class="button hero-btn radius blue ae-3">Sign Up</a>
                             <a class="button hero-btn radius white textBlue ae-4">Sign In</a>
@@ -224,7 +247,7 @@
                     <div class="fix-10-12">
                         <h2 class="ae-1 h2--header">Affiliates</h2>
                         <div class="ae-2">
-                            <p class="p--responsive">He takes snapshots, makes notes and records impressions on tablecloths or newspapers, on backs of envelopes or&nbsp;matchbooks.</p>
+                            <p class="p--responsive">If you have a roster of current trained hospitality & banquet employees, you can sign them up to our platform. <a href="#contact">Contact us</a> and we'll set up a meeting with you to explain all the benefits of the <strong>Zolbyt</strong> Affiliates&nbsp;Program.</p>
                         </div>
                         <a class="button hero-btn radius blue ae-3">Sign Up</a>
                         <a class="button hero-btn radius white textBlue ae-4">Sign In</a>
@@ -237,7 +260,7 @@
     </section>
 
     <!-- Slide #55 -->
-    <section class="slide fade kenBurns fade-blue" name="contact">
+    <section class="slide whiteSlide" name="contact">
         <div class="content">
             <div class="container">
                 <div class="wrap">
@@ -260,13 +283,13 @@
                 </div>
             </div>
         </div>
-        <div class="background" style="background-image:url(assets/img/contact__bg.jpg)"></div>
+        <div class="background" style="background: #f3f3f3"></div>
     </section>
 
     <!-- Panel Bottom #16 -->
     <nav class="panel bottom forceMobileView">
         <div class="sections desktop">
-            <div class="left"> </div>
+            <div class="left lang-select"><a href="#" class="active">EN</a> <a href="#">ES</a></div>
             <div class="center space"><a href="#">Terms &amp; Conditions</a> <a href="#">Privacy Policy</a> <a href="#contact">Contact Us</a></div>
             <div class="right"><span data-dropdown-id="2" class="button actionButton dropdownTrigger"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#share"></use></svg></span></div>
         </div>
@@ -284,7 +307,7 @@
             <li class="googlePlus"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#googlePlus"></use></svg></li>
             <li class="pinterest"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pinterest"></use></svg></li>
             <li class="stumbleupon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stumbleupon"></use></svg></li>
-            <li class="linkedin"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use></svg></li
+            <li class="linkedin"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use></svg></li>
             <li class="mail" data-subject="Subject" data-body="Body">share by email</li>
         </ul>
     </div>
