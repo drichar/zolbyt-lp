@@ -108,6 +108,10 @@ body:not(.firstSlide) .lang-select a {
     margin-bottom: 100px;
 }
 
+.cell-71 svg.hide-small {
+    display: none !important;
+}
+
 .slide.whiteSlide .cell-71:hover svg {
     stroke: #fff;
     fill: #fff;
@@ -115,8 +119,8 @@ body:not(.firstSlide) .lang-select a {
 
 .cell-71 h3 {
     color: #2196F3;
-    -webkit-transition: .35s;
-    transition: .35s;
+    -webkit-transition: .15s;
+    transition: .15s;
 }
 
 .cell-71:hover h3 {
@@ -144,17 +148,38 @@ body:not(.firstSlide) .lang-select a {
 
     .loginNav {
         margin-bottom: 0;
+        max-width: 320px !important;
     }
 
-    .cell-71 {
+    .cell-71, .cell-71:hover {
         white-space: nowrap;
-        padding-left: 0;
-        padding-right: 0;
+        padding: 0.5rem 0.5rem 1.0rem;
+        margin-bottom: 0.75rem;
+        background-color: #2196F3;
+        border-radius: 100px;
+        -webkit-transition:0.25s !important;
+        transition:0.25s !important;
     }
 
     .cell-71:hover {
-        background-color: transparent;
-        box-shadow: none;
+        -webkit-box-shadow: inset 0 -100px 0 rgba(41,41,41,0.15), 0 4px 6px 0 rgba(0,0,0,.1),0 1px 10px 0 rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.1) !important;
+        box-shadow: inset 0 -100px 0 rgba(41,41,41,0.15), 0 4px 6px 0 rgba(0,0,0,.1),0 1px 10px 0 rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.1) !important;
+    }
+
+    .cell-71:active {
+        transition: -webkit-transform 0.25s, opacity 0.25s, position 0s !important;
+        -webkit-transition: -webkit-transform 0.25s, opacity 0.25s, top 0.25s !important;
+        -webkit-box-shadow: inset 0 -100px 0 rgba(0,0,0,0.2), 0 3px 6px 0 rgba(0,0,0,.1),0 0px 10px 0 rgba(0,0,0,.1),0 1px 4px -1px rgba(0,0,0,.1) !important;
+        box-shadow: inset 0 -100px 0 rgba(0,0,0,0.2), 0 3px 6px 0 rgba(0,0,0,.1),0 0px 10px 0 rgba(0,0,0,.1),0 1px 4px -1px rgba(0,0,0,.1) !important;
+        top: 1px;
+    }
+
+    .cell-71 svg.hide-small {
+        display: inline-block !important;
+    }
+
+    .cell-71 svg.show-small {
+        display: none !important;
     }
 
     .cell-71 svg, .cell-71 h3 {
@@ -163,23 +188,31 @@ body:not(.firstSlide) .lang-select a {
         margin-bottom: 0;
     }
 
-    .cell-71:hover svg {
-        fill: #303030 !important;
-        stroke: #303030 !important;
+    .cell-71 svg, .cell-71:hover svg {
+        position: relative;
+        top: 4px;
+        margin-right: 0.5rem;
+        fill: #FFF !important;
+        stroke: #FFF !important;
     }
 
     .cell-71 svg {
-        height: 24px;
-        position: relative;
-        top: 4px;
+        height: 24px; width: 30px;
+        fill: rgba(255, 255, 255, 0.5) !important;
+        stroke: none;
+    }
+
+    .cell-71:hover svg {
+        height: 24px; width: 38px;
+        fill: rgba(255, 255, 255, 0.75) !important;
+    }
+
+    .cell-71 h3, .cell-71:hover h3 {
+        color: #FFF;
     }
 
     .cell-71 p {
         display: none !important;
-    }
-
-    .cell-71:hover h3 {
-        color: #2196F3;
     }
 }
 
@@ -212,6 +245,12 @@ body:not(.firstSlide) .lang-select a {
     }
 }
 
+@media screen and (max-width:570px) {
+    .loginNav {
+        max-width: none !important;
+    }
+}
+
 @media screen and (max-width:435px) {
     .h2--slogan, .h2--header {
         font-size: 25px;
@@ -237,5 +276,9 @@ body:not(.firstSlide) .lang-select a {
 
     .wrap-left {
         text-align: left !important;
+    }
+
+    .cell-71 h3 {
+        font-size: 16px;
     }
 }
