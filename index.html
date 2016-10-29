@@ -23,7 +23,7 @@
     <!-- SVG Library -->
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
         <symbol id="logo" viewBox="0 0 132 56"><path d="M1.3 40.4L14.6 22h-13v-5.2H22V22L9.4 39.9h12.8v5.2H1.3v-4.7z"/><path d="M21 30.9C21 23.7 26.3 16 36.2 16c9.8 0 15.1 7.7 15.1 14.9 0 7.3-5.3 15-15.1 15-9.9 0-15.2-7.6-15.2-15zm6.8.1c0 4.9 3.8 8.6 8.4 8.6s8.3-3.7 8.3-8.7-3.7-8.7-8.3-8.7c-4.7.1-8.4 3.8-8.4 8.8zM52.6 7h6.7v38.1h-6.7V7zm9.6 0h6.7v13.3c2.8-3.5 6.8-4.4 9.4-4.4 6.7 0 14.1 4.9 14.1 14.9C92.4 40.4 85.8 46 78 46c-4.4 0-7.9-2.2-9.4-4.9v4.1h-6.5L62.2 7zm23.5 23.9c0-4.6-3.6-8.7-8.5-8.7-5.3 0-8.5 4.1-8.5 8.7 0 4.7 3.3 8.8 8.4 8.8 5.5 0 8.6-4.4 8.6-8.8z"/><path d="M100.2 44L89.6 16.8h7.2l6.9 18.8 6.8-18.8h7.2L102.8 55h-7.2l4.6-11z"/><path d="M119.1 22h-4.7v-5.2h4.7V7h6.7v9.8h4.8V22h-4.8v23.1h-6.7V22z"/></symbol>
-        <symbol id="close" viewBox="0 0 30 30"><path d="M15 0c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15zm5.7 19.3c.4.4.4 1 0 1.4-.2.2-.4.3-.7.3s-.5-.1-.7-.3l-4.3-4.3-4.3 4.3c-.2.2-.4.3-.7.3s-.5-.1-.7-.3c-.4-.4-.4-1 0-1.4l4.3-4.3-4.3-4.3c-.4-.4-.4-1 0-1.4s1-.4 1.4 0l4.3 4.3 4.3-4.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4l-4.3 4.3 4.3 4.3z"/></symbol>
+        <symbol id="close" viewBox="0 0 30 30"><path d="M20.7 9.3c-.4-.4-1-.4-1.4 0L15 13.6l-4.3-4.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4.3 4.3-4.3 4.3c-.4.4-.4 1 0 1.4.2.2.4.3.7.3s.5-.1.7-.3l4.3-4.3 4.3 4.3c.2.2.4.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4L16.4 15l4.3-4.3c.4-.4.4-1 0-1.4z"/></symbol>
         <symbol id="back" viewBox="0 0 20 20"><path d="M2.3 10.7l5 5c.4.4 1 .4 1.4 0s.4-1 0-1.4l-3.3-3.3h11.6c.6 0 1-.4 1-1s-.4-1-1-1h-11.6l3.3-3.3c.4-.4.4-1 0-1.4-.2-.2-.4-.3-.7-.3s-.5.1-.7.3l-5 5c-.2.2-.3.5-.3.7 0 .2.1.5.3.7z"/></symbol>
         <symbol id="menu" viewBox="0 0 22 22"><path d="M1 5h20c.6 0 1-.4 1-1s-.4-1-1-1h-20c-.6 0-1 .4-1 1s.4 1 1 1zm20 5h-20c-.6 0-1 .4-1 1s.4 1 1 1h20c.6 0 1-.4 1-1s-.4-1-1-1zm0 7h-20c-.6 0-1 .4-1 1s.4 1 1 1h20c.6 0 1-.4 1-1s-.4-1-1-1z"/></symbol>
         <symbol id="share" viewBox="0 0 22 22"><path d="M21 10c-.6 0-1 .4-1 1v7h-18v-7c0-.6-.4-1-1-1s-1 .4-1 1v7c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2v-7c0-.6-.4-1-1-1zM5.5 7.5c.3 0 .5-.1.7-.3l3.8-3.8v9.6c0 .6.4 1 1 1s1-.4 1-1v-9.6l3.8 3.8c.2.2.5.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4l-5.5-5.5c-.1-.1-.2-.2-.3-.2-.2-.1-.5-.1-.8 0l-.3.2-5.5 5.5c-.4.4-.4 1 0 1.4.2.2.4.3.7.3z"/></symbol>
@@ -83,16 +83,16 @@
 
     <!-- Sidebar -->
     <nav class="sidebar small white" data-sidebar-id="1">
-        <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
+        <div class="close"><svg style="width:40px;height:40px;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
         <div class="content">
             <a href="#home" class="logo"><svg width="120" height="50"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a>
             <ul class="mainMenu uppercase">
                 <li><a href="#start">Get Started</a></li>
             </ul>
             <ul class="mainMenu small uppercase">
-                <li><a href="#">Employer Login</a></li>
-                <li><a href="#">Contractor Login</a></li>
-                <li><a href="#">Affiliate Login</a></li>
+                <li><a href="#">Employer Sign In</a></li>
+                <li><a href="#">Contractor Sign In</a></li>
+                <li><a href="#">Affiliate Sign In</a></li>
             </ul>
             <ul class="subMenu small">
                 <li><a href="#contact">Contact Us</a></li>
@@ -100,9 +100,9 @@
                 <li><a href="#">Privacy Policy</a></li>
             </ul>
             <ul class="social">
-                <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></li>
-                <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg></a></li>
-                <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#googlePlus"></use></svg></a></li>
+                <li><a href="#"><svg style="fill:#55acee;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></li>
+                <li><a href="#"><svg style="fill:#3b5998;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg></a></li>
+                <li><a href="#"><svg style="fill:#DD4330;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#googlePlus"></use></svg></a></li>
             </ul>
         </div>
     </nav>
@@ -133,7 +133,7 @@
                     <div class="fix-10-12">
                         <h2 class="ae-1 h2--header">Zolbyt is the easy way to find part&nbsp;time&nbsp;work</h2>
                         <div class="sourceSans popupTrigger clearBoth ae-2 margin-top-4" data-popup-id="zolbytVimeo">
-                            <span class="ae-5 fromCenter">
+                            <span class="ae-4 fromCenter">
                                 <span class="button play blue button-89">
                                     <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play"></use></svg>
                                 </span>
@@ -143,24 +143,24 @@
                     </div>
                     <div class="fix-12-12 loginNav">
                         <ul class="grid fixedSpaces equal center grid-71">
-                            <li class="col-4-12 ae-6">
-                                <a href="#employers" class="cell-71 equalElement">
+                            <li class="col-4-12 ae-3">
+                                <a href="#employers" class="cell-71 empl-bg equalElement">
                                     <svg width="64" height="34" class="icon-71 show-small"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-employers"></use></svg>
                                     <svg width="64" height="34" class="icon-71 hide-small"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-employers-filled"></use></svg>
                                     <h3 class="uppercase">Employers</h3>
                                     <p class="small">Trained staff on call when you need them most</p>
                                 </a>
                             </li>
-                            <li class="col-4-12 ae-7">
-                                <a href="#contractors" class="cell-71 equalElement">
+                            <li class="col-4-12 ae-4">
+                                <a href="#contractors" class="cell-71 cont-bg equalElement">
                                     <svg width="64" height="34" class="icon-71 show-small"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-contractors"></use></svg>
                                     <svg width="64" height="34" class="icon-71 hide-small"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-contractors-filled"></use></svg>
                                     <h3 class="uppercase">Contractors</h3>
                                     <p class="small">Extra pay, when you choose, doing what you know</p>
                                 </a>
                             </li>
-                            <li class="col-4-12 ae-8">
-                                <a href="#affiliates" class="cell-71 equalElement last">
+                            <li class="col-4-12 ae-5">
+                                <a href="#affiliates" class="cell-71 affl-bg equalElement last">
                                     <svg width="64" height="34" class="icon-71 show-small"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-affiliates"></use></svg>
                                     <svg width="64" height="34" class="icon-71 hide-small"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-affiliates-filled"></use></svg>
                                     <h3 class="uppercase">Affiliates</h3>
@@ -226,7 +226,8 @@
                         <div class="fix-7-12 left toLeft">
                             <h2 class="ae-1 h2--header">Contractors</h2>
                             <div class="ae-2">
-                                <p class="p--responsive">Are you a hospitality industry employee looking for extra hours? <strong>Zolbyt</strong> is the easiest way to find shifts on demand. Register and receive notifications of available shifts. <strong>Simple.</strong></p>
+                                <p class="p--responsive">Are you a hospitality industry employee looking for extra hours? <strong>Zolbyt</strong> is the easiest way to find shifts on demand. Register and receive notifications of available&nbsp;shifts.</p>
+                                <p class="p--responsive"><strong>Simple.</strong></p>
                             </div>
                             <a class="button hero-btn radius blue ae-3">Sign Up</a>
                             <a class="button hero-btn radius white textBlue ae-4">Sign In</a>
@@ -243,12 +244,13 @@
     <section class="slide fade kenBurns fade-blue" name="affiliates">
         <div class="content">
             <div class="container">
-                <div class="wrap wrap-left">
+                <div class="wrap wrap-left left">
 
-                    <div class="fix-10-12">
+                    <div class="fix-8-12">
                         <h2 class="ae-1 h2--header">Affiliates</h2>
                         <div class="ae-2">
-                            <p class="p--responsive">If you have a roster of current trained hospitality &amp; banquet employees, you can sign them up to our platform. <a href="#contact">Contact us</a> and we'll set up a meeting with you to explain all the benefits of the <strong>Zolbyt</strong> Affiliates&nbsp;Program.</p>
+                            <p class="p--responsive">If you have a roster of current trained hospitality &amp; banquet employees, you can sign them up to our&nbsp;platform.</p>
+                            <p class="p--responsive"><a href="#contact">Contact us</a> and we'll set up a meeting with you to explain all the benefits of the <strong>Zolbyt</strong> Affiliates&nbsp;Program.</p>
                         </div>
                         <a class="button hero-btn radius blue ae-3">Sign Up</a>
                         <a class="button hero-btn radius white textBlue ae-4">Sign In</a>
@@ -291,7 +293,7 @@
     <nav class="panel bottom forceMobileView">
         <div class="sections desktop">
             <div class="left"> </div>
-            <div class="center space"><a href="#">Terms &amp; Conditions</a> <a href="#">Privacy Policy</a> <a href="#contact">Contact Us</a></div>
+            <div class="center space sourceSans"><a href="#">Terms &amp; Conditions</a> <a href="#">Privacy Policy</a> <a href="#contact">Contact Us</a> <span>Copyright &copy; 2016 Zolbyt</span></div>
             <div class="right lang-select"><a href="#" class="active">EN</a> <a href="#">ES</a></div>
         </div>
         <div class="sections compact hidden">
