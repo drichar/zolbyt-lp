@@ -221,6 +221,7 @@ body:not(.firstSlide) .panel.top .center .menu {
         border-radius: 100px;
         -webkit-transition:0.25s !important;
         transition:0.25s !important;
+        background: #2196F3;
     }
 
     /*.cell-71.empl-bg, .cell-71.cont-bg, .cell-71.affl-bg, .cell-71.empl-bg:hover, .cell-71.cont-bg:hover, .cell-71.affl-bg:hover {
@@ -312,6 +313,10 @@ body:not(.firstSlide) .panel.top .center .menu {
 
     .p--responsive {
         font-size: 18px;
+    }
+
+    .slides.stage-6 .panel.top {
+        background: #f3f3f3;
     }
 }
 
